@@ -1,7 +1,7 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass[margin]{res} 
+\documentclass[12pt, margin]{res}
 % the margin option causes section titles to appear to the left of body text 
 \textwidth=5.2in % increase textwidth to get smaller right margin
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
@@ -13,67 +13,39 @@
 \name{Zhiyan Foo\\[12pt]} % the \\[12pt] adds a blank line after name
  \setlist{nosep,after=}
 \address{
-    {\bf Email:} \href{mailto:zhiyanfoo@gmail.com}{\tt zhiyanfoo@gmail.com} \\
-    {\bf Website:} \href{https://zhiyanfoo.github.io/}{\tt
-    https://zhiyanfoo.github.io/} \\
     {\bf Github:} \href{https://github.com/zhiyanfoo}{\tt
-    https://github.com/zhiyanfoo} \\
-    {\bf Phone:} +65 84354397 
+    github.com/zhiyanfoo} \\
+    {\bf Website:} \href{https://zhiyanfoo.github.io/}{\tt
+    zhiyanfoo.github.io/} \\
 }
 
-\address{ {\bf Address}\\
-  Kang Ching Rd Blk 333 \\
-    \# 08-264 \\
-  Singapore, 610333
+\address{ 
+    {\bf Email:} \href{mailto:zhiyanfoo@gmail.com}{\tt zhiyanfoo@gmail.com} \\
+    {\bf Phone:} +1 519 781 2160
         }
  
 \begin{resume} 
  
-\section{Objective} 
-A position in backend development or data analysis. 
-
-\section{Background}
-During high school and while in the army, I pursued my interest in programming
-    by taking online courses as well as working on my own software projects. I've
-    also studied mathematics intensely while in the army.
-
-\section{Education} 
-    {\bf Beijing BISS International School} -- Beijing, China.
-\begin{itemize}
-    \item International Baccalaureate (41/45 points).
-    \item Technical Subjects: Math HL 6/7, Physics HL 7/7, Chemistry HL 7/7.
-    \item Math Extended Essay (A).
-\end{itemize}
-
-
 \section{Employment}
-    {\bf Army} -- Singapore Armed Forces, 02/2015 to 02/2017. (National Service)
- 
+    {\bf Quantcast, Software Engineering Intern} -- Worked on optimizing the performance of a Django app that
+    downloaded and filtered data related to running automated advertising
+    campaigns, and then loaded them into an internal file format used by the
+    company. (03/2017 to 06/2017). \\ \\
+    {\bf Army} -- Singapore Armed Forces, 02/2015 to 02/2017. (Conscription)
 
-\section{Technology}
-    (good level) python, numpy; (basic level) Mathematica, C, Java, HTML, CSS,
-    \LaTeX; (learning) Haskell.
 
+\section{Languages}
+    (extensive) python (5+ years); (learning) Haskell; (basic level) C, Java,
+    Scheme, \LaTeX; 
 
 \section{Projects}
     {\bf crunch-shake} -- A python library that evaluates scripts on
-        the Bechdel Test and other similar metrics.
+        the Bechdel Test and other similar metrics. \\
             Source Code : \href{https://github.com/zhiyanfoo/crunch-shake/}{\tt
             https://github.com/zhiyanfoo/crunch-shake/}.
 
 \section{Additional Relevant Coursework} 
 
-    {\bf Learning From Data} -- {\it Caltech telecourse}.
-    \begin{itemize} \itemsep -2pt
-        \item Introductory Machine Learning course focused on mathematical
-            rigor. Machine learning
-            algorithms like Percepton with Stochastic Gradient Descent,
-            hard-margin Support Vector Machines and Logistic Regression built
-            from scratch.
-        \item Source Code :
-    \href{https://github.com/zhiyanfoo/caltech-machine-learning/}{\tt
-    https://github.com/zhiyanfoo/caltech-machine-learning/}
-    \end{itemize} 
     {\bf Real Analysis, Convexity and Optimization} -- {\it Harvard Extension
     School}.
     \begin{itemize} \itemsep -2pt
@@ -81,23 +53,28 @@ During high school and while in the army, I pursued my interest in programming
             with convex sets, normed infinite-dimensional vector spaces, and
             convex functionals.
     \end{itemize}
-    {\bf AP Computer Science A} -- {\it American Advancement Placement Exam}. 
+    {\bf Learning From Data} -- {\it Caltech telecourse}.
     \begin{itemize} \itemsep -2pt
-            \item Score (5/5). Main topics included were sorting algorithms and
-                object-oriented programming.
-    \end{itemize}
+        \item Introductory Machine Learning course focused on mathematical
+          rigor. Machine Learning algorithms built (almost) from scratch include
+            Percepton with Stochastic Gradient Descent, hard-margin Support
+            Vector Machines and Logistic Regression. For hard-margin SVM, an
+            external convex optimization package was used.
+        \item Source Code :\\
+    \href{https://github.com/zhiyanfoo/caltech-machine-learning/}{\tt
+    https://github.com/zhiyanfoo/caltech-machine-learning/}
+    \end{itemize} 
     {\bf Algorithms on Strings} -- {\it Coursera, University of San Diego}. 
     \begin{itemize} \itemsep -2pt
         \item String compression and search algorithms  e.g. Suffix
             Trees, Burrows-Wheeler Transform and Knuth-Morris-Pratt.
     \end{itemize}
-Complete list of coursework done can be found at
+Complete list of coursework done can be found at \\
 \href{https://zhiyanfoo.github.io/learning/}{\tt
 https://zhiyanfoo.github.io/learning/}.
-\section{Mathematics}
-Linear Algebra, Multivariable Calculus, Differential Equations,
-        Stochastic Systems, Real Analysis.
-
+\section{Education} 
+    {\bf University of Waterloo} -- Bachelors of Mathematics 
+    (2017 -- Ongoing)
 \end{resume} 
 \end{document} 
 
