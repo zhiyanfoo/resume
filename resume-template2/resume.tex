@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\courseSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\courseItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Zhiyan Foo}} &
+  \href{mailto:zhiyanfoo@gmail.com}{zhiyanfoo@gmail.com}\\
+  \href{https://github.com/zhiyanfoo/}{github.com/zhiyanfoo} & +1 519 781
+  2160 \\
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Quantcast}{Singapore}
+      {Software Engineering Intern}{March 2017 - July 2017}
+      \resumeItemListStart
+        \resumeItem{Realtime Bidding Configuration}
+          {Service that set the configuration file for Quantcast's bidding
+          engines.\\}
+          \begin{itemize}
+            \item[\textbullet] Worked on improving performance of the sharder:
+              a component that split the master configuration file so that bidding engines in different geolocations only received the
+              necessary data.
+            \item[\textbullet] Also worked on improving performance of the
+              sharding of black and white listed domains.  
+            \item[\textbullet] Added in-depth logging and improved exception handling of
+              the sharding process.
+            \item[\textbullet] Identified slow and extremely variable
+              performance when the configuration files where being shipped to
+              the bidding engines
+          \end{itemize}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Singapore Armed Forces}{Singapore}
+      {Conscript -- Army}{Feburary 2015 - Feburary 2017}
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Languages}
+ \resumeSubHeadingListStart
+   \item{
+    (extensive) python (5+ years); (learning) Haskell; (basic level) C, Java,
+    Racket, \LaTeX. 
+   }
+ \resumeSubHeadingListEnd
+
+
+\section{Additional Relevant Coursework}
+ \resumeSubHeadingListStart
+    \courseSubheading
+      {Real Analysis, Convexity and Optimization}{Harvard Extension School}
+      \resumeItemListStart
+        \courseItem
+          {Upper-division pure math course focused on optimization problems
+            with convex sets, normed infinite-dimensional vector spaces, and
+            convex functionals.}
+      \resumeItemListEnd
+    \courseSubheading
+      {Learning From Data}{Caltech Telecourse}
+      \resumeItemListStart
+        \courseItem
+          {Introductory Machine Learning course focused on mathematical
+          rigor. Machine Learning algorithms built from scratch include
+            Percepton with Stochastic Gradient Descent, hard-margin Support
+            Vector Machines and Logistic Regression. For hard-margin SVM, an
+            external convex optimization package was used.}
+        \courseItem {Source Code :
+    \href{https://github.com/zhiyanfoo/caltech-machine-learning/}{\tt
+    github.com/zhiyanfoo/caltech-machine-learning/}}
+      \resumeItemListEnd
+    \courseSubheading
+      {Algorithms on Strings}{Coursera, University of San Diego}
+      \resumeItemListStart
+        \courseItem
+          {String compression and search algorithms  e.g. Suffix
+            Trees, Burrows-Wheeler Transform and Knuth-Morris-Pratt.}
+      \resumeItemListEnd
+\vspace{5pt}
+ Complete list of additional coursework done can be found at
+\href{https://zhiyanfoo.github.io/learning/}{\tt
+zhiyanfoo.github.io/learning/}.
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{crunch-shake}
+      {A python library that evaluates scripts on
+        the Bechdel Test and other similar metrics. \\ 
+        \hskip 7.3em
+            Source Code : \href{https://github.com/zhiyanfoo/crunch-shake/}{\tt
+            github.com/zhiyanfoo/crunch-shake/}.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, CA}
+      {Candidate for Bachelors of Mathematics}{Aug. 2017 -- Present}
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+%--------Fun------------
+\section{Fun}
+ \resumeSubHeadingListStart
+   \item{
+       Captain of Intramural Futsal Team (Casual level). Haskell Club Founder
+       (not affiliated with the university).
+   }
+
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
