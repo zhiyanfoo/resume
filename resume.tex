@@ -97,7 +97,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Zhiyan Foo}} &
-  \href{mailto:zhiyanfoo@gmail.com}{zhiyanfoo@gmail.com}\\
+  zhiyanfoo@gmail.com\\
   \href{https://github.com/zhiyanfoo/}{github.com/zhiyanfoo} & +1 519 781
   2160 \\
 \end{tabular*}
@@ -111,7 +111,7 @@
       {Software Engineering Intern}{March 2017 - July 2017}
       \resumeItemListStart
         \resumeItem{The Company}
-          {Quantcast uses big data to target advertisments at an online
+          {Quantcast uses big data to target advertisements at an online
           audience.}
         \resumeItem{The Team}
           {Ad Services Engineering team: responsible for the data generation of
@@ -119,15 +119,18 @@
           (RTB) system.}
         \resumeItemAlt{The Projects}
           \begin{itemize}[label={\textbullet}]
-            \item Worked on improving performance of the sharder:
-              a component that split the master configuration file so that
+            \item Primarily worked on RTBconf, an ETL (Extract, Load, Transfer)
+              Django App that took data from heterogeneous sources, and sorted them into
+              various protobuf files.
+            \item Improved performance of the sharder:
+              a RTBconf component that split the master configuration file so that
               bidding engines in different geolocations only received the
               necessary data.
             \item Benchmarked performance of the generation of RTB
               configuration files, identified bottlenecks, and proposed and
               implemented performance improvements.
-            \item Added in-depth logging and improved exception handling of
-              the sharding process.
+            \item Added logging and improved exception handling of the sharding
+              process.
           \end{itemize}
       \resumeItemListEnd
 
@@ -160,11 +163,13 @@
 %-------------------------------------
 
 %--------PROGRAMMING SKILLS------------
-\section{Languages}
+\section{PROGRAMMING SKILLS}
  \resumeSubHeadingListStart
    \courseItem
-     {\textbf{Proficient:} python (5+ years). 
-     \textbf{Familiar:} Haskell; C, Java, Racket, \LaTeX.}
+     {\textsc{Languages -- }\textbf{Proficient:} python (5+ years). 
+     \textbf{Familiar:} Haskell, C, Java, Racket, \LaTeX.}
+   \courseItem
+     {\textsc{Tech/Frameworks -- } Git, *Nix, Django, numpy.}
  \resumeSubHeadingListEnd
 %-------------------------------------
 
@@ -210,8 +215,8 @@
 \section{Extracurriculars}
  \resumeSubHeadingListStart
    \item{
-       Captain of Intramural Futsal Team (Casual level). Haskell Club Founder
-       (not affiliated with the university).
+       Haskell Club Founder (\href{http://haskelluw.com}{\tt haskelluw.com}). Captain of
+       Intramural Futsal Team (Casual level). \\ Dungeons and Dragons.
    }
 
  \resumeSubHeadingListEnd
