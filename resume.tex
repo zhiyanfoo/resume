@@ -113,24 +113,30 @@
         \resumeItem{The Company}
           {Quantcast uses big data to target advertisements at an online
           audience.}
-        \resumeItem{The Team}
-          {Ad Services Engineering team: responsible for the data generation of
-          advertising campaigns and its distribution to the real-time bidding
-          (RTB) system.}
+        % \resumeItem{The Team}
+        %   {Ad Services Engineering team: responsible for the data generation of
+        %   advertising campaigns and its distribution to the real-time bidding
+        %   (RTB) system.}
         \resumeItemAlt{The Projects}
           \begin{itemize}[label={\textbullet}]
             \item Primarily worked on RTBconf, an ETL (Extract, Transform, Load)
               Django App that took data from heterogeneous sources, and sorted them into
-              various protobuf files.
+              an internal file format (protobuf).
             \item Improved performance of the sharder:
               a RTBconf component that split the master configuration file so that
               bidding engines in different geolocations only received the
-              necessary data.
-            \item Benchmarked performance of the generation of RTB
-              configuration files, identified bottlenecks, and proposed and
-              implemented performance improvements.
-            \item Added logging and improved exception handling of the sharding
-              process.
+              necessary data. Cut down CPU time from around 18 minutes to
+              around 13 minutes.
+              \begin{itemize}
+              \item Abstracted complex business logic as a graph and then
+                implemented efficient graph traversal algorithms to perform the
+                original business logic.
+              \item Used indirection to reduce memory usage and number of sorts
+                needed to shard blacklisted and whitelisted domains.
+              \end{itemize}
+              \item Worked independently to design, execute, test and benchmark main
+                project, but collaborated with teammates, on smaller features
+                and bug fixes.
           \end{itemize}
       \resumeItemListEnd
 
