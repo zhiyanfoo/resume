@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -122,11 +122,8 @@
             \item Primarily worked on RTBconf, an ETL (Extract, Transform, Load)
               Django App that took data from heterogeneous sources, and sorted them into
               an internal file format (protobuf).
-            \item Improved performance of the sharder:
-              a RTBconf component that split the master configuration file so that
-              bidding engines in different geolocations only received the
-              necessary data. Cut down CPU time from around 18 minutes to
-              around 13 minutes.
+            \item Improved performance of the sharder: Cut down CPU time from
+              around 18 minutes to around 13 minutes.
               \begin{itemize}
               \item Abstracted complex business logic as a graph and then
                 implemented efficient graph traversal algorithms to perform the
@@ -134,9 +131,6 @@
               \item Used indirection to reduce memory usage and number of sorts
                 needed to shard blacklisted and whitelisted domains.
               \end{itemize}
-              \item Worked independently to design, execute, test and benchmark
-                the main project, but collaborated with teammates, on smaller
-                features and bug fixes.
           \end{itemize}
       \resumeItemListEnd
 
@@ -147,14 +141,25 @@
   \resumeSubHeadingListEnd
 %--------------------------------------
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{Waterloo, CA}
-      {Candidate for Bachelors of Mathematics}{August 2017 -- Present}
-  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{PROGRAMMING SKILLS}
+ \resumeSubHeadingListStart
+   \courseItem
+     {\textsc{Languages -- }\textbf{Proficient:} python (5+ years). 
+     \textbf{Familiar:} Haskell, C, Java, Racket, \LaTeX.}
+   \courseItem
+     {\textsc{Tech/Frameworks -- } Git, *Nix, Django, numpy.}
+ \resumeSubHeadingListEnd
 %-------------------------------------
+
+%%-----------EDUCATION-----------------
+%\section{Education}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {University of Waterloo}{Waterloo, CA}
+%      {Candidate for Bachelors of Mathematics}{August 2017 -- Present}
+%  \resumeSubHeadingListEnd
+%%-------------------------------------
 
 %-----------PROJECTS-----------------
 \section{Projects}
@@ -168,16 +173,6 @@
   \resumeSubHeadingListEnd
 %-------------------------------------
 
-%--------PROGRAMMING SKILLS------------
-\section{PROGRAMMING SKILLS}
- \resumeSubHeadingListStart
-   \courseItem
-     {\textsc{Languages -- }\textbf{Proficient:} python (5+ years). 
-     \textbf{Familiar:} Haskell, C, Java, Racket, \LaTeX.}
-   \courseItem
-     {\textsc{Tech/Frameworks -- } Git, *Nix, Django, numpy.}
- \resumeSubHeadingListEnd
-%-------------------------------------
 
 %------ADDITIONAL-COURSEWORK----------
 \section{Additional Coursework}
@@ -211,8 +206,7 @@
             Trees, Burrows-Wheeler Transform and Knuth-Morris-Pratt.}
       \resumeItemListEnd
 \vspace{5pt}
-\emph{I've been taking online college courses in addition to school or work since I was 16.
- It's how I started programming.} Complete list of additional coursework done can be found at
+ Complete list of additional coursework done can be found at
 \href{https://zhiyanfoo.github.io/learning/}{\tt zhiyanfoo.github.io/learning/}. 
  \resumeSubHeadingListEnd
 %-------------------------------------
