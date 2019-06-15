@@ -106,68 +106,52 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \courseItem
-     {\textsc{Languages -- } python, Haskell, C, javascript, Lisp, \LaTeX, Mysql,
-     PostgresSql}
+     {\textsc{Languages -- } Python, Typescript, Haskell, Rust, C/C++}
    \courseItem
-     {\textsc{Tech/Frameworks -- } Git, *Nix, Flask, Django, numpy}
+     {\textsc{Tech/Frameworks -- } *Nix, React/Redux, Flask, Django, Express, MySQL, PostgreSql,
+     \LaTeX, Git, AWS(EC2, S3) }
  \resumeSubHeadingListEnd
 %-------------------------------------
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Setter}{Rust, Typescript}
+      {Full-Stack Developer Intern}{Jan 2019 - April 2019}
+          \begin{itemize}[label={\textbullet}]
+              \item Rewrote critical parts of the Node backend in Rust, e.g. transactional email
+                  handling, realtime quote editor and service payment endpoints.
+              \item Helped implement CI/CD (Travis, Docker) for microservices and investigate
+                  moving from GCS to AWS.
+          \end{itemize}
 
     \resumeSubheading
-      {Got It}{Hanoi, Vietnam}
+      {Got It}{Python}
       {Software Engineering Intern}{May 2018 - August 2018}
-      \resumeItemListStart
-        \resumeItem{The Company}
-          {Got It matches people with questions to professionals who can answer them.}
-        % \resumeItem{The Team}
-        %   {Ad Services Engineering team: responsible for the data generation of
-        %   advertising campaigns and its distribution to the real-time bidding
-        %   (RTB) system.}
-        \resumeItemAlt{The Projects}
           \begin{itemize}[label={\textbullet}]
-              \item Designed and implemented nominally RESTful API's (as well as real-time
-                  channels). In particular designed the API's for the first mobile app to be
-                  used by our professionals. 
-              \item Worked on the companies routing algorithms, which was the most technically
-                  involved part of the companies stack.
+              \item Worked on the companies routing algorithms, the most
+                  technically involved part of the companies stack. Extended the
+                  system so we could perform real-time matching between professionals for
+                  mentoring.
+              \item Created API's and real-time channels for the first
+                  mobile app used by our professionals. In particular wrote the backend service
+                  to showcase real-time demand and analytics to our pro's.
           \end{itemize}
-      \resumeItemListEnd
-
     \resumeSubheading
-      {Quantcast}{Singapore}
+      {Quantcast}{Python}
       {Software Engineering Intern}{March 2017 - July 2017}
-      \resumeItemListStart
-        \resumeItem{The Company}
-          {Quantcast uses big data to target advertisements at an online
-          audience.}
-        % \resumeItem{The Team}
-        %   {Ad Services Engineering team: responsible for the data generation of
-        %   advertising campaigns and its distribution to the real-time bidding
-        %   (RTB) system.}
-        \resumeItemAlt{The Projects}
-          \begin{itemize}[label={\textbullet}]
-            \item Primarily worked on RTBconf, an ETL (Extract, Transform, Load)
-              Django App that took data from heterogeneous sources, and sorted them into
-              an internal file format (protobuf).
-            \item Improved performance of the sharder:
-              a RTBconf component that split the master configuration file so that
-              bidding engines in different geolocations only received the
-              necessary data. Cut down CPU time from around 18 minutes to
-              around 13 minutes.
-              \begin{itemize}
-              \item Abstracted complex business logic as a graph and then
-                implemented efficient graph traversal algorithms to perform the
-                original business logic.
-              \item Used indirection to reduce memory usage and number of sorts
-                needed to shard blacklisted and whitelisted domains.
-              \end{itemize}
+      \begin{itemize}[label={\textbullet}]
+        \item Optimized performance of a real-time bidding configuration ETL (Extract, Transform,
+            Load) pipeline. Cut down CPU time by \(\sim\) 30\%.
+          \begin{itemize}
+          \item Abstracted complex business logic as a graph and then
+            implemented efficient graph traversal algorithms to perform the
+            original business logic.
+          \item Used indirection to reduce memory usage and number of sorts
+            needed to shard domains.
           \end{itemize}
-      \resumeItemListEnd
-
+      \end{itemize}
   \resumeSubHeadingListEnd
 %--------------------------------------
 
@@ -185,13 +169,7 @@
     \courseSubheading
       {Learning From Data}{Caltech Telecourse}
       \resumeItemListStart
-        \courseItem
-          {Introductory Machine Learning course focused on mathematical
-          rigor. Machine Learning algorithms built from scratch include
-            Percepton with Stochastic Gradient Descent, hard-margin Support
-            Vector Machines and Logistic Regression. For hard-margin SVM, an
-            external convex optimization package was used.}
-        \courseItem {Source Code :
+        \courseItem {Machine Learning Course:
     \href{https://github.com/zhiyanfoo/caltech-machine-learning/}{\tt
     github.com/zhiyanfoo/caltech-machine-learning/}}
       \resumeItemListEnd
@@ -205,12 +183,25 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{crunch-shake}
-      {A python library that evaluates scripts on
-        the Bechdel Test and other similar metrics. \\ 
-        \hskip 7.3em
-            Source Code : \href{https://github.com/zhiyanfoo/crunch-shake/}{\tt
-            github.com/zhiyanfoo/crunch-shake/}.}
+    \resumeSubItem{Zen}
+      {An alternative to python's virtualenvwrapper that I personally use. 
+            \href{https://github.com/zhiyanfoo/zen}{\tt
+            https://github.com/zhiyanfoo/zen}
+      }
+\vspace*{0.2cm}
+    \resumeSubItem{Chat App}
+      {Chat service with Haskell backend (Websockets, Hspec) and Typescript
+      frontend (React/Redux, Redux Saga).\\ 
+\vspace*{0.2cm}
+        \hskip 5.77em
+            Source Code : \href{https://github.com/zhiyanfoo/chat-haskell-backend}{\tt
+            https://github.com/zhiyanfoo/chat-haskell-backend}
+            
+        \hskip 5.77em
+        Demo : 
+\href{http://dadistcoder.com.s3-website-us-east-1.amazonaws.com/}{\tt
+            http://dadistcoder.com.s3-website-us-east-1.amazonaws.com/}
+            }
   \resumeSubHeadingListEnd
 %-------------------------------------
 
@@ -218,20 +209,20 @@
 \section{Extracurriculars}
  \resumeSubHeadingListStart
    \item{
-       Haskell Club Founder. Soccer. Dungeons and Dragons.
+       Haskell Club Founder. Soccer. Basketball. Dungeons and Dragons.
    }
 
  \resumeSubHeadingListEnd
 %-------------------------------------------
 
-%-----------EDUCATION-----------------
+%%-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Waterloo, CA}
-      {Candidate for Bachelors of Mathematics}{August 2017 -- Present}
+      {Candidate for Bachelors of Mathematics (Pure Math)}{August 2017 -- Present}
   \resumeSubHeadingListEnd
-%-------------------------------------
+%%-------------------------------------
 
 
 \end{document}
