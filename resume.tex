@@ -106,50 +106,47 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \courseItem
-     {\textsc{Languages -- } Python, Typescript, Golang, Haskell, Rust}
+     {\textsc{Languages -- } Python, Typescript, Haskell, Golang, Rust, Lisp}
    \courseItem
-     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, *Nix, React/Redux, SQL}
+     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, *Nix, React/Redux, SQL, AWS}
  \resumeSubHeadingListEnd
 %-------------------------------------
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+    {Tulip Interfaces}{Boston Greater Area, MA}
+    {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019}
+        \begin{itemize}[label={\textbullet}]
+          \item Worked on tooling for per-customer deployments: managing hundreds of kubernetes
+            deployments, postgres databases and associated AWS resources. For example
+            implemented auto deployment on our EU cluster, built tooling to manage expiration
+            and deletion of deployments, and improved/fixed disaster recovery backups
+            and rich-media asset migration.
+          \item Implemented cold-storage for our elasticsearch logs and made them queryable by
+            AWS Athena. In addition to permanent log storage, this allowed us to reduce the
+            log retention period on our elasticsearch cluster and scale down it down.
+          \item Determined that by purchasing a different reserved EC2 instance type, we could
+            reduce our production clusters spend by 24\% -- currently \(\sim\) \$4000 USD a month. Discovered this by using
+            Prometheus and Grafana to analyze our current production workload.
+        \end{itemize}
     \resumeSubheading
-      {Setter}{Rust, Typescript}
-      {Full-Stack Developer Intern}{Jan 2019 - April 2019}
+      {Setter}{Toronto, ON}
+      {Backend Developer Intern}{Jan 2019 - April 2019}
           \begin{itemize}[label={\textbullet}]
-              \item Rewrote critical parts of the Node backend in Rust, e.g. transactional email
-                  handling, realtime quote editor and service payment endpoints.
+              \item Rewrote critical parts of the Node backend in Rust, e.g. realtime quote editor and payment endpoints.
               \item Helped implement CI/CD (Travis, Docker) for microservices and investigate
                   moving from GCP to AWS.
           \end{itemize}
-
     \resumeSubheading
-      {Got It}{Python}
-      {Software Engineering Intern}{May 2018 - August 2018}
-          \begin{itemize}[label={\textbullet}]
-              \item Worked on the companies routing algorithms, the most
-                  technically involved part of the companies stack. Extended the
-                  system so we could perform real-time matching between professionals for
-                  mentoring.
-              \item Created API's and real-time channels for the first
-                  mobile app used by our professionals. In particular wrote the backend service
-                  to showcase real-time demand and analytics to our pro's.
-          \end{itemize}
-    \resumeSubheading
-      {Quantcast}{Python}
+      {Quantcast}{Singapore}
       {Software Engineering Intern}{March 2017 - July 2017}
       \begin{itemize}[label={\textbullet}]
         \item Optimized performance of a real-time bidding configuration ETL (Extract, Transform,
             Load) pipeline. Cut down CPU time by \(\sim\) 30\%.
-          \begin{itemize}
-          \item Abstracted complex business logic as a graph and then
-            implemented efficient graph traversal algorithms to perform the
-            original business logic.
-          \item Used indirection to reduce memory usage and number of sorts
-            needed to shard domains.
-          \end{itemize}
+        \item Used indirection to reduce memory usage and number of sorts
+          needed to shard black/whitelisted domains.
       \end{itemize}
   \resumeSubHeadingListEnd
 %--------------------------------------
@@ -173,8 +170,7 @@
     github.com/zhiyanfoo/caltech-machine-learning/}}
       \resumeItemListEnd
 \vspace{5pt}
-\emph{I've been taking online college courses in addition to school or work since I was 16.
- It's how I started programming.} Complete list of additional coursework done can be found at
+ Complete list of additional coursework done can be found at
 \href{https://zhiyanfoo.github.io/learning/}{\tt zhiyanfoo.github.io/learning/}. 
  \resumeSubHeadingListEnd
 %-------------------------------------
@@ -204,8 +200,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Waterloo}{Waterloo, CA}
-      {Candidate for Bachelors of Mathematics (Pure Math)}{August 2017 -- Present}
+      {University of Waterloo}{Waterloo, ON}
+      {Joint Pure Math and Computer Science}{August 2017 -- Present}
   \resumeSubHeadingListEnd
 %%-------------------------------------
 
