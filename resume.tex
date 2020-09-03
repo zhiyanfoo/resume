@@ -106,9 +106,9 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \courseItem
-     {\textsc{Languages -- } Python, Typescript, Haskell, Golang, Rust, Lisp}
+     {\textsc{Languages -- } Python, Golang, Typescript, Haskell, Rust, Lisp}
    \courseItem
-     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, *Nix, React/Redux, SQL, AWS}
+     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, Concourse, React/Redux, SQL, AWS}
  \resumeSubHeadingListEnd
 %-------------------------------------
 
@@ -117,39 +117,70 @@
   \resumeSubHeadingListStart
   \resumeSubheading
     {Tulip Interfaces}{Boston Greater Area, MA}
-    {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019}
+    {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019 and May 2020 - August 2020}
         \begin{itemize}[label={\textbullet}]
-          \item Worked on tooling for per-customer deployments: managing hundreds of kubernetes
-            deployments, postgres databases and associated AWS resources. For example
-            implemented auto deployment on our EU cluster, built tooling to manage expiration
-            and deletion of deployments, and improved/fixed disaster recovery backups
-            and rich-media asset migration.
-          \item Implemented cold-storage for our elasticsearch logs and made them queryable by
-            AWS Athena. In addition to permanent log storage, this allowed us to reduce the
-            log retention period on our elasticsearch cluster and scale down it down.
-          \item Determined that by purchasing a different reserved EC2 instance type, we could
-            reduce our production clusters spend by 24\% -- currently \(\sim\) \$4000 USD a month. Discovered this by using
-            Prometheus and Grafana to analyze our current production workload.
+          \item Reworked deploy process to use a distributed build process (via Concourse). 
+            Led to 50\% reduction in deploy times for microservices (20m to 10m) and enabled multiple parallel builds.
+          \item Built a new service (Go) that allowed modifications of our customer's Kubernetes ingress,
+            so that they could filter traffic to their sites.
+          \item Permanently stored our elasticsearch logs in S3 and partitioned them to be
+            queryable by AWS Athena.
+          \item Increased on-call alerting coverage via Prometheus and Elasticsearch.
+            Standardized builds on Buildkit from standard Docker and Rocker.
+            Experimented with vertical pod autoscaling to automate resource allocation on our
+            Kubernetes cluster.
         \end{itemize}
+  % \resumeSubheading
+  %   {Tulip Interfaces}{Boston Greater Area, MA}
+  %   {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019}
+  %       \begin{itemize}[label={\textbullet}]
+  %         \item Implemented auto deployment on our EU cluster and built tooling for both expiration
+  %           and hard-deletion of customer sites (Go, Ruby, AWS CloudFormation).
+  %       \end{itemize}
     \resumeSubheading
       {Setter}{Toronto, ON}
       {Backend Developer Intern}{Jan 2019 - April 2019}
           \begin{itemize}[label={\textbullet}]
-              \item Rewrote critical parts of the Node backend in Rust, e.g. realtime quote editor and payment endpoints.
+              \item Rewrote critical parts of the Node backend in Rust, e.g. real-time quote editor and payment endpoints.
               \item Helped implement CI/CD (Travis, Docker) for microservices and investigate
                   moving from GCP to AWS.
+          \end{itemize}
+     \resumeSubheading
+      {Got It}{Hanoi, VN}
+      {Software Engineering Intern}{May 2018 - August 2018}
+          \begin{itemize}[label={\textbullet}]
+              \item Worked on the companies's routing algorithms, the most
+                  technically involved part of the companies stack. Extended the
+                  system so we could perform real-time matching between professionals for
+                  mentoring.
           \end{itemize}
     \resumeSubheading
       {Quantcast}{Singapore}
       {Software Engineering Intern}{March 2017 - July 2017}
       \begin{itemize}[label={\textbullet}]
-        \item Optimized performance of a real-time bidding configuration ETL (Extract, Transform,
-            Load) pipeline. Cut down CPU time by \(\sim\) 30\%.
+        \item Cut down the CPU time of a real-time bidding configuration ETL pipeline by
+          \(\sim\) 30\%. (Python)
         \item Used indirection to reduce memory usage and number of sorts
           needed to shard black/whitelisted domains.
       \end{itemize}
   \resumeSubHeadingListEnd
 %--------------------------------------
+
+%-----------PROJECTS-----------------
+\section{Open source/Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{oplogtoredis}
+      {Enabled TLS support for connecting to redis.
+            \href{https://github.com/tulip/oplogtoredis/pull/26/files}{\tt
+            github.com/tulip/oplogtoredis/pull/26/files}
+      }
+    \resumeSubItem{Zen}
+      {An alternative to python's virtualenvwrapper.
+            \href{https://github.com/zhiyanfoo/zen}{\tt
+            github.com/zhiyanfoo/zen}
+      }
+  \resumeSubHeadingListEnd
+%-------------------------------------
 
 %------ADDITIONAL-COURSEWORK----------
 \section{Additional Coursework}
@@ -175,25 +206,15 @@
  \resumeSubHeadingListEnd
 %-------------------------------------
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Zen}
-      {An alternative to python's virtualenvwrapper.
-            \href{https://github.com/zhiyanfoo/zen}{\tt
-            https://github.com/zhiyanfoo/zen}
-      }
-  \resumeSubHeadingListEnd
-%-------------------------------------
 
-%--------Fun--------------------------
-\section{Extracurriculars}
- \resumeSubHeadingListStart
-   \item{
-       Haskell Club Founder. Soccer. Basketball. Dungeons and Dragons.
-   }
+%%--------Fun--------------------------
+%\section{Extracurriculars}
+% \resumeSubHeadingListStart
+%   \item{
+%       Haskell Club Founder. Soccer. Basketball. Dungeons and Dragons.
+%   }
 
- \resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 %-------------------------------------------
 
 %%-----------EDUCATION-----------------
@@ -201,7 +222,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
-      {Joint Pure Math and Computer Science}{August 2017 -- Present}
+      {Pure Math and Computer Science}{August 2017 -- Present}
   \resumeSubHeadingListEnd
 %%-------------------------------------
 
