@@ -120,13 +120,13 @@
     {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019 and May 2020 - August 2020}
         \begin{itemize}[label={\textbullet}]
           \item Reworked deployment to use a distributed build process (via Concourse).
-            Led to 50\% reduction in deploy times for microservices (20m to 10m) and enabled multiple parallel builds.
+            Led to 50\% reduction in deploy time for microservices (20m to 10m) and enabled multiple parallel builds.
           \item Built a new Go service that allowed modifications of our customer's Kubernetes
             ingress. This allowed customers to filter traffic to their sites.
           \item Permanently stored our elasticsearch logs in S3 and partitioned them to be
             queryable by AWS Athena.
           \item Increased on-call alerting coverage via Prometheus and Elasticsearch.
-            Standardized builds on Buildkit from standard Docker and Rocker.
+            Standardized builds on Buildkit, away from default Docker and Rocker.
             Experimented with vertical pod autoscaling to automate resource allocation on our
             Kubernetes cluster.
         \end{itemize}
