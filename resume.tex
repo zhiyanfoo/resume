@@ -106,10 +106,10 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \courseItem
-     {\textsc{Languages -- } Python, Golang, Typescript, Haskell, Rust, Lisp}
+     {\textsc{Languages -- } Golang, Python, Typescript, Haskell, Rust, Lisp}
    \courseItem
-     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, Concourse, React/Redux, Postgres, AWS,
-     Cilium}
+     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, Concourse, React/Redux, AWS, Cilium,
+     Prometheus, Elasticsearch}
  \resumeSubHeadingListEnd
 %-------------------------------------
 
@@ -118,11 +118,13 @@
   \resumeSubHeadingListStart
   \resumeSubheading
     {Datadog}{NYC, NY (Remote)}
-    {Software Infrastructure Engineering Intern}{Jan 2021 - May 2021}
+    {Software Engineering Intern (Traffic Team)}{Jan 2021 - April 2021}
         \begin{itemize}[label={\textbullet}]
-          \item Built tools to stress and loadtest cilium, our kubernetes cluster CNI (Container Network
-            Interface), to check for performance regressions during upgrades.
-          \item Built tools to help write and debug cilium network policies.
+          \item Worked on Datadog's cross-cluster service discovery platform.
+          \item Built tools to stress and loadtest
+            \href{https://docs.cilium.io/en/v1.10.0-rc1/intro/}{cilium} (
+            \href{https://github.com/containernetworking/cni}{kubernetes cni plugin})
+          \item Built tools to write and debug cilium network policies.
         \end{itemize}
   \resumeSubheading
     {Tulip Interfaces}{Boston Greater Area, MA}
@@ -134,34 +136,26 @@
             ingress. This allowed customers to filter traffic to their sites.
           \item Permanently stored our elasticsearch logs in S3 and partitioned them to be
             queryable by AWS Athena.
-          \item Increased on-call alerting coverage via Prometheus and Elasticsearch.
-            Standardized builds on Buildkit, away from default Docker and Rocker.
-            Researched using vertical pod autoscaling to automate resource allocation on our
-            Kubernetes cluster.
+          \item
+            Standardized builds on Buildkit across all our services, away from default Docker and Rocker.
+
+          \item Researched using vertical pod autoscaling to automate resource allocation for
+            statefulsets.
         \end{itemize}
     \resumeSubheading
       {Setter}{Toronto, ON}
       {Rust Developer Intern}{Jan 2019 - April 2019}
           \begin{itemize}[label={\textbullet}]
               \item Rewrote critical parts of the Node backend in Rust, e.g. real-time quote editor and payment endpoints.
-              \item Helped implement CI/CD (Travis, Docker) for microservices and investigate
-                  moving from GCP to AWS.
-          \end{itemize}
-     \resumeSubheading
-      {Got It}{Hanoi, VN}
-      {Software Engineering Intern}{May 2018 - August 2018}
-          \begin{itemize}[label={\textbullet}]
-              \item Worked on the companies's routing algorithms, the most
-                  technically involved part of the companies stack. Extended the
-                  system so we could perform real-time matching between professionals for
-                  mentoring.
+              \item Helped implement CI/CD (Travis, Docker) for microservices and began the
+                process of moving from GCP to AWS.
           \end{itemize}
     \resumeSubheading
       {Quantcast}{Singapore}
       {Software Engineering Intern}{March 2017 - July 2017}
       \begin{itemize}[label={\textbullet}]
         \item Cut down the CPU time of a real-time bidding configuration ETL pipeline by
-          \(\sim\) 30\%. (Python)
+          \(\sim\) 30\%.
         \item Used indirection to reduce memory usage and number of sorts
           needed to shard black/whitelisted domains.
       \end{itemize}
@@ -217,14 +211,14 @@
 % \resumeSubHeadingListEnd
 %-------------------------------------------
 
-%%%-----------EDUCATION-----------------
-%\section{Education}
-%  \resumeSubHeadingListStart
-%    \resumeSubheading
-%      {University of Waterloo}{Waterloo, ON}
-%      {Pure Math and Computer Science}{August 2017 -- Present}
-%  \resumeSubHeadingListEnd
-%%%-------------------------------------
+%%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Pure Math and Computer Science}{August 2017 -- Present}
+  \resumeSubHeadingListEnd
+%%-------------------------------------
 
 
 \end{document}
