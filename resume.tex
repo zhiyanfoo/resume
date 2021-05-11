@@ -106,15 +106,26 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \courseItem
-     {\textsc{Languages -- } Python, Golang, Typescript, Haskell, Rust, Lisp}
+     {\textsc{Languages -- } Golang, Python, Typescript, Haskell, Rust, Lisp}
    \courseItem
-     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, Concourse, React/Redux, SQL, AWS}
+     {\textsc{Tech/Frameworks -- } Kubernetes, Docker, Concourse, React/Redux, AWS, Cilium,
+     Prometheus, Elasticsearch}
  \resumeSubHeadingListEnd
 %-------------------------------------
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+    {Datadog}{NYC, NY (Remote)}
+    {Software Engineering Intern (Traffic Team)}{Jan 2021 - April 2021}
+        \begin{itemize}[label={\textbullet}]
+          \item Worked on Datadog's cross-cluster service discovery platform.
+          \item Built tools to stress and loadtest
+            \href{https://docs.cilium.io/en/v1.10.0-rc1/intro/}{cilium} (
+            \href{https://github.com/containernetworking/cni}{kubernetes cni plugin})
+          \item Built tools to write and debug cilium network policies.
+        \end{itemize}
   \resumeSubheading
     {Tulip Interfaces}{Boston Greater Area, MA}
     {Software Infrastructure Engineering Intern}{Sept 2019 - Dec 2019 and May 2020 - August 2020}
@@ -125,56 +136,37 @@
             ingress. This allowed customers to filter traffic to their sites.
           \item Permanently stored our elasticsearch logs in S3 and partitioned them to be
             queryable by AWS Athena.
-          \item Increased on-call alerting coverage via Prometheus and Elasticsearch.
-            Standardized builds on Buildkit, away from default Docker and Rocker.
-            Experimented with vertical pod autoscaling to automate resource allocation on our
-            Kubernetes cluster.
+          \item
+            Standardized builds on Buildkit across all our services, away from default Docker and Rocker.
+
+          \item Researched using vertical pod autoscaling to automate resource allocation for
+            statefulsets.
         \end{itemize}
     \resumeSubheading
       {Setter}{Toronto, ON}
-      {Backend Developer Intern}{Jan 2019 - April 2019}
+      {Rust Developer Intern}{Jan 2019 - April 2019}
           \begin{itemize}[label={\textbullet}]
               \item Rewrote critical parts of the Node backend in Rust, e.g. real-time quote editor and payment endpoints.
-              \item Helped implement CI/CD (Travis, Docker) for microservices and investigate
-                  moving from GCP to AWS.
-          \end{itemize}
-     \resumeSubheading
-      {Got It}{Hanoi, VN}
-      {Software Engineering Intern}{May 2018 - August 2018}
-          \begin{itemize}[label={\textbullet}]
-              \item Worked on the companies's routing algorithms, the most
-                  technically involved part of the companies stack. Extended the
-                  system so we could perform real-time matching between professionals for
-                  mentoring.
+              \item Helped implement CI/CD (Travis, Docker) for microservices and began the
+                process of moving from GCP to AWS.
           \end{itemize}
     \resumeSubheading
       {Quantcast}{Singapore}
       {Software Engineering Intern}{March 2017 - July 2017}
       \begin{itemize}[label={\textbullet}]
         \item Cut down the CPU time of a real-time bidding configuration ETL pipeline by
-          \(\sim\) 30\%. (Python)
+          \(\sim\) 30\%.
         \item Used indirection to reduce memory usage and number of sorts
           needed to shard black/whitelisted domains.
       \end{itemize}
   \resumeSubHeadingListEnd
 %--------------------------------------
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Zen}
-      {An alternative to python's virtualenvwrapper.
-            \href{https://github.com/zhiyanfoo/zen}{\tt
-            github.com/zhiyanfoo/zen}
-      }
-  \resumeSubHeadingListEnd
-%-------------------------------------
-
 %------ADDITIONAL-COURSEWORK----------
 \section{Additional Coursework}
  \resumeSubHeadingListStart
     \courseSubheading
-      {Real Analysis, Convexity and Optimization}{Harvard Extension School}
+      {\small Real Analysis, Convexity and Optimization}{\small Harvard Extension School}
       \resumeItemListStart
         \courseItem
           {Upper-division pure math course focused on optimization problems
@@ -182,16 +174,30 @@
             convex functionals.}
       \resumeItemListEnd
     \courseSubheading
-      {Learning From Data}{Caltech Telecourse}
+      {\small Learning From Data}{\small Caltech Telecourse}
       \resumeItemListStart
         \courseItem {Machine Learning Course:
     \href{https://github.com/zhiyanfoo/caltech-machine-learning/}{\tt
     github.com/zhiyanfoo/caltech-machine-learning/}}
       \resumeItemListEnd
 \vspace{5pt}
- Complete list of additional coursework done can be found at
-\href{https://zhiyanfoo.github.io/learning/}{\tt zhiyanfoo.github.io/learning/}.
  \resumeSubHeadingListEnd
+%-------------------------------------
+
+%-----------PROJECTS-----------------
+\section{Open source and Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{oplogtoredis}
+      {Enabled TLS support for connecting to redis.
+            \href{https://github.com/tulip/oplogtoredis/pull/26/files}{\tt
+            github.com/tulip/oplogtoredis/pull/26/files}
+      }
+    \resumeSubItem{Zen}
+      {An alternative to python's virtualenvwrapper.
+            \href{https://github.com/zhiyanfoo/zen}{\tt
+            github.com/zhiyanfoo/zen}
+      }
+  \resumeSubHeadingListEnd
 %-------------------------------------
 
 
